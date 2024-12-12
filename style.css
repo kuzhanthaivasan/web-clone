@@ -235,7 +235,7 @@ margin-right: 110px;
     padding-right: -50px;
     border-radius: 25px;
     overflow: hidden;
-    
+    justify-content: center;
  
 }
 
@@ -292,7 +292,7 @@ margin-right: 110px;
     border-radius: 20px;
 }
 .sixth{
-    padding: 150px;
+    /* padding: 150px; */
 }
 
 .sixth-image-container{
@@ -304,24 +304,26 @@ margin-right: 110px;
 
 .sixth-image-container img{
     width: 100%;
-    height: 100%;
+    height: 800%;
     object-fit: cover;
     padding-left: 140px;
     padding-right: 140px;
     padding-bottom: 150px;
+    padding-top: 40px;
+    border-radius: 20px;
 }
 
 .card-03{
     position: absolute;
-    top: 0%;
+    top: 5%;
     left: 56%;
-    height: 500px;
+    height: 00px;
 
 }
 
 .card-03 .card-2 svg{
     width: 80px;
-    height: 300px;
+    height: 100px;
     padding-left: 10px;
 }
 /* 
@@ -485,6 +487,25 @@ padding-left: 10px;
 
  /* Mobile Styles (320px — 480px) */
  @media (max-width: 480px) {
+
+    .card-03{
+        left: 60px;
+        height: 100px;
+        top: -60px;
+      }
+
+      .card-2{
+        width: 200px;
+        height: 200px; 
+        margin-left: 30px;
+        font-size: 8px;
+        
+    }
+
+    .sixth-image-container img{
+        height: 100%;
+    }
+      
 /* 
     *{
         overflow-x: auto;
@@ -519,11 +540,11 @@ padding-left: 10px;
       }
          
       .float-content{
-        display: none;
+    left: 0px;
     }
 
     .sixth-image-container  img{
-        display: none;
+        
     }
 .cards .card0{
     width: 200px;
@@ -611,6 +632,21 @@ form .i8{
 }
 
 
+.float-content{
+    left: -220px;
+    width: 250px;
+    top: 1450px;
+    }
+
+    .float-content .float-img img{
+       display: none;
+    }
+
+    .float-content .float-text{
+        margin-left: -60px;
+    }
+
+  
  }
 
  /* Tablet Styles (481px — 768px) */
@@ -622,6 +658,38 @@ form .i8{
     .navbar{
         overflow-x: hidden;
     }
+    .card-03{
+        left: 0px;
+        height: 100px;
+        top: -60px;
+      }
+
+      .card-2{
+        width: 280px;
+        height: 180px; 
+        margin-left: 30px;
+        font-size: 8px;
+        
+    }
+    
+    
+    .float-content{
+        left: -260px;
+        width: 230px;
+        top: 1450px;
+        }
+    
+        .float-content .float-img img{
+           display: none;
+        }
+    
+        .float-content .float-text{
+            margin-left: -60px;
+        }
+    
+      
+      
+    
  }
  @media (min-width: 481px) and (max-width: 768px) {
     .top-bar{
@@ -651,7 +719,7 @@ form .i8{
       }
 
       .float-content{
-        display: none;
+    
     }
 
     .farm{
@@ -664,7 +732,7 @@ form .i8{
     }
 
     .sixth-image-container  img{
-        display: none;
+        
     }
 
     .footer .container .num1 {
@@ -730,6 +798,38 @@ form .i8{
       .last-card{
         overflow-x: hidden;
       }
+
+      .card-03{
+        left: 100px;
+        height: 100px;
+        top: -60px;
+      }
+
+      .card-2{
+        width: 280px;
+        height: 280px; 
+        margin-left: 30px;
+        font-size: 12px;
+        
+    }
+    .sixth-image-container img{
+        height: 100%;
+    }
+      
+    .float-content{
+        left: -130px;
+        width: 300px;
+        top: 1450px;
+        }
+    
+        .float-content .float-img img{
+           display: none;
+        }
+    
+        .float-content .float-text{
+            margin-left: -60px;
+        }
+    
       
 }
 
@@ -766,7 +866,7 @@ form .i8{
   }
 
   .float-content{
-    display: none;
+
 }
 
 .farm{
@@ -774,9 +874,59 @@ form .i8{
     height: 500px;
 }
 .sixth-image-container  img{
-    display: none;
+    
 }
- }
+.card-03{
+    left: 400px;
+    top: -40px;
+  }
+
+  .card-2{
+    width: 330px;
+    height: 350px; 
+    margin-left: 30px;
+    
+}
+
+.sixth-image-container img{
+    height: 100%;
+}
+
+.float-content{
+    left: -150px;
+    width: 700px;
+    top: 1000px;
+    }
+
+    .float-content .float-img img{
+        width: 300px;
+    }
+
+    .float-content .float-text{
+        margin-left: -60px;
+    }
+
+}
+
+  
+@media (max-width:859px) and (min-width:767px){
+    .float-content{
+        left: -100px;
+        width: 400px;
+        top: 1450px;
+        }
+    
+        .float-content .float-img img{
+           display: none;
+        }
+    
+        .float-content .float-text{
+            margin-left: -60px;
+        }
+    
+}
+
+ 
 
  @media  (min-width:1025px) and (max-width:1300px) {
     .navbar{
@@ -818,7 +968,7 @@ form .i8{
   }
 
   .float-content{
-    display: none;
+
 }
 
 .farm{
@@ -826,8 +976,33 @@ form .i8{
     height: 500px;
 }
 .sixth-image-container  img{
-    display: none;
+   
 }
+
+.card-03{
+    left: 450px;
+  }
+
+  .card-2{
+    width: 350px;
+    height: 350px; 
+    margin-left: 30px;
+    
+}
+.float-content{
+    left: -100px;
+    width: 700px;
+    top: 1100px;
+    }
+
+    .float-content .float-img img{
+        width: 300px;
+    }
+
+    .float-content .float-text{
+        margin-left: -60px;
+    }
+
 }
 
 
@@ -846,7 +1021,7 @@ form .i8{
        padding-left: 100px;      
  }
 .float-content{
-    display: none;
+ 
 }
 
 .farm{
@@ -854,14 +1029,54 @@ form .i8{
     height: 500px;
 }
 
-.sixth-image-container  img{
+/* .sixth-image-container  img{
     display: none;
-}
+} */
 
 .footer .container .num1{
     display: flex;
     flex-wrap: wrap;
 }
+
+.sixth-image-container img{
+    width: 100%;
+    height: 800%;
+    object-fit: cover;
+    padding-left: 140px;
+    padding-right: 140px;
+    padding-bottom: 150px;
+    padding-top: 40px;
+    border-radius: 20px;
+}
+
+.card-03{
+  left: 600px;
+}
+
+.card-03 .card-2 svg{
+    width: 80px;
+    height: 300px;
+    padding-left: 10px;
+}
+
+
+
+  .card-2{
+    width: 400px;
+    height: 350px; 
+    margin-left: 30px;
+    
+}
+
+.float-content{
+    left: -100px;
+    width: 800px;
+    }
+
+    .float-content .float-text{
+        margin-left: -50px;
+    }
+
  }
 
 
