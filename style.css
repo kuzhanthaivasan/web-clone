@@ -5,13 +5,11 @@
     font-style: normal;
     line-height: 1.7;
     letter-spacing: 0.5px;
-    
+    box-sizing: border-box;
     
 }
 
-body{
-    
-}
+ 
 .top-bar{
     background: #000;
     color: azure;
@@ -100,12 +98,22 @@ body{
   height: 200px;
   border-radius: 20px;
 }
+
+/* .form1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.form1 img{
+    padding-top: 200px;
+} */
 .cards{
     display: flex;
     flex-wrap: wrap;
+
     }
 
-.card-001  :hover{
+.cards  :hover{
     /* margin-bottom: 10px; */
     background-color: rgb(9, 34, 5);
     border-radius: 20px;
@@ -114,7 +122,22 @@ body{
     
 }
 
+.cards .card .c1 .c2 {
+    padding-top: 50px;
+    padding-left: 20px;
+    
+}
+ .cards .card .c1 .c2 svg{
+    background-color: #c8f5ce;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+ }
 
+ .cards .card .card-body{
+    
+ }
 
 .card svg {
     height: 70px;
@@ -251,12 +274,36 @@ margin-right: 110px;
     overflow-y: hidden;
 }
 
-.form{
-    width: 750px;
-    height: 700px;
-    margin-top: 250px;
+.combine-form{
+    display: flex;
 }
 
+.combine-form .pic-form{
+    padding-top: 200px;
+    margin-right: -100px;
+    margin-left: 100px;
+    
+}
+
+.combine-form .pic-form img{
+    border-radius: 20px;
+}
+.form{
+    width: 750px;
+    height: 650px;
+    margin-top: 250px;
+    margin-bottom: 100px;
+}
+
+.form .form1{
+    border-radius: 20px;
+
+}
+
+/* .form .farm{
+    height: 100px;
+    background-color: #000;
+} */
 .form .quform .quform-elements .form-control {
     padding: 10px;
     
@@ -291,9 +338,9 @@ margin-right: 110px;
 .sixth img{
     border-radius: 20px;
 }
-.sixth{
-    /* padding: 150px; */
-}
+/* .sixth{
+    padding: 150px;
+} */
 
 .sixth-image-container{
     position: relative;
@@ -354,14 +401,14 @@ margin-right: 110px;
 }
 
 .last-card .card img{
-    width: 350px;
-    height: 200px;
+    width: 380px;
+    height: 250px;
 
 }
 
 .last-card .card{
-    width: 350px;
-    height: 400px; 
+    width: 380px;
+    height: 410px; 
     overflow: hidden;
     
 }
@@ -374,22 +421,36 @@ margin-right: 110px;
     position: absolute;
     
     z-index: 1;
-    top: 240px;
-    left: 240px;
+    top: 290px;
+    left: 250px;
 }
 
 .date{
     border: #f7f3f3 solid 5px;
-    background-color: rgb(103, 224, 87);
+    background-color: rgb(85, 187, 83);
     border-radius: 50%;
     width: 65px;
     height: 65px;
     color: aliceblue;
 }
 
+.last-card:hover{
+    .date{
+        background-color: black;
+        color: white;
+    }
+    
+}
 .date h5{
-    margin-bottom: -5px;
-    padding-left: 15px;
+    margin-bottom: -3px;
+    padding-left: 13px;
+    
+}
+.date .txt{
+    margin-bottom: -3px;
+    padding-left: 18px;
+    padding-top: 5px;
+    font-size: 15px;
     
 }
 
@@ -487,7 +548,30 @@ padding-left: 10px;
 
  /* Mobile Styles (320px — 480px) */
  @media (max-width: 480px) {
-
+    *{
+        font-size: 14px;
+    }
+    
+.top-bar .ps-01{
+       display: none;
+    }
+.top-bar{
+    height: 55px;
+   display: flex;
+   justify-content: space-around;
+   padding-right: 10px;
+}
+.top-bar .ps-0{
+    margin-left: -25px;
+    padding-top: 10px;
+    justify-content: space-around;
+}
+.top-bar .ps-0 li{
+    display: flex;
+   
+    justify-content: space-around;
+    padding-left: 18px;
+}
     .card-03{
         left: 60px;
         height: 100px;
@@ -496,23 +580,25 @@ padding-left: 10px;
 
       .card-2{
         width: 200px;
-        height: 200px; 
+        height: 230px; 
         margin-left: 30px;
         font-size: 8px;
         
     }
 
+    .sixth-image-container{
+        height: 240px;
+    }
+
     .sixth-image-container img{
-        height: 100%;
+        display: none;
     }
       
 /* 
     *{
         overflow-x: auto;
     } */
-    .top-bar{
-        display: none;
-    }
+ 
     
     /* .navbar .nav1 .nav2 img{
         display: none;
@@ -543,9 +629,6 @@ padding-left: 10px;
     left: 0px;
     }
 
-    .sixth-image-container  img{
-        
-    }
 .cards .card0{
     width: 200px;
     height: 200px;
@@ -586,54 +669,58 @@ padding-left: 10px;
 
 .form {
   width: 400px;
-  margin-left: -50px;
   height: 80%;
+  width: 350px;
 }
 
 form .quform-elements .qu1 .i1{
     
-    margin-right: 10px;
+    margin-left: -45px;
     width: 300px;
 }
 
 form .quform-elements  .i2{
-    margin-left: 65px;
+    margin-left:18px;
     width: 300px;
 }
 
 form .quform-elements .qu1 .i3{
     
-    margin-right: 10px;
+    margin-left: -45px;
     width: 300px;
 }
 
 form .quform-elements  .i4{
-    margin-left: 65px;
+    margin-left:18px;
     width: 300px;
 }
 
 
 form .quform-elements  .i5{
-    margin-left: 20px;
+    margin-left: -20px;
     width: 300px;
 }
 
 form .quform-elements .form-group .quform-input .i6{
     
-    margin-left: 15px;
-    width: 300px;
+    /* margin-left: 15px;
+    width: 300px; */
 }
 form .i7{
     margin-top: -10px;
+    margin-left: -60px;
 }
 
 form .i8{
     margin-top: -50px;
+    margin-left: -90px;
 }
 
-
+form{
+    margin-left: 10px;
+}
 .float-content{
-    left: -220px;
+    left: -235px;
     width: 250px;
     top: 1450px;
     }
@@ -645,12 +732,48 @@ form .i8{
     .float-content .float-text{
         margin-left: -60px;
     }
+.cards .card .c1{
+    
+    height: 500px;
+    font-size: 15px;
+    justify-content: center;
+}
 
+.cards svg{
+    margin-top: -40px;
+    margin-bottom: -10px;
+
+}
+.pic-form{
+    display: none;
+}
+
+.combine-form{
+    justify-content: center;
+}
   
  }
 
  /* Tablet Styles (481px — 768px) */
  @media (max-width:350px) {
+
+    .top-bar{
+        height: 55px;
+       display: flex;
+       justify-content: space-around;
+    }
+    .top-bar .ps-0{
+        margin-left: -60px;
+        padding-top: 10px;
+        justify-content: space-around;
+    }
+    .top-bar .ps-0 li{
+        display: flex;
+       
+        justify-content: space-around;
+        padding-left: 18px;
+    }
+
     .third .third-section img{
         display: none;
 
@@ -672,7 +795,7 @@ form .i8{
         
     }
     
-    
+  
     .float-content{
         left: -260px;
         width: 230px;
@@ -687,14 +810,55 @@ form .i8{
             margin-left: -60px;
         }
     
-      
+        .pic-form{
+            display: none;
+        }
+        
+        .combine-form{
+            justify-content: center;
+        } 
       
     
  }
- @media (min-width: 481px) and (max-width: 768px) {
+
+
+ @media(min-width: 481px) and (max-width: 768px) {
     .top-bar{
-        display: none;
+        height: 55px;
+       display: flex;
+       justify-content: space-around;
     }
+
+    .top-bar .ps-01{
+        display: hidden;   
+       }
+   
+    .top-bar .ps-0{
+        margin-left: -25px;
+        padding-top: 10px;
+        justify-content: space-around;
+    }
+    .top-bar .ps-0 li{
+        display: flex;
+        justify-content: space-around;
+        padding-left: 18px;
+    }
+
+
+
+    .cards .card .c1 .c2{
+       margin-top: -40px;
+       
+            }
+
+            .cards .card .c1 {
+                font-size: 14px;
+            }
+
+            .cards .card{
+                overflow-y: hidden;
+            }
+            
     
     .third .third-section{
         flex-wrap: wrap;
@@ -717,10 +881,6 @@ form .i8{
       .third .dummy{
         display: none;
       }
-
-      .float-content{
-    
-    }
 
     .farm{
         width: 500px;
@@ -748,30 +908,28 @@ form .i8{
 
     .form {
         width: 500px;
-        margin-left: -50px;
+        margin-left: -20px;
         height: 900px;
       }
       
       form .quform-elements .qu1 .i1{
           
-          margin-right: 10px;
-          width: 300px;
+        width: 200px;
       }
       
       form .quform-elements  .i2{
-          margin-left: 65px;
-          width: 300px;
+        
+        width: 200px;
       }
       
       form .quform-elements .qu1 .i3{
-          
-          margin-right: 10px;
-          width: 300px;
+
+        width: 200px;
       }
       
       form .quform-elements  .i4{
-          margin-left: 65px;
-          width: 300px;
+
+        width: 200px;
       }
       
       
@@ -793,6 +951,10 @@ form .i8{
       form .i8{
           margin-top: -50px;
           padding-right: 70px;
+      }
+
+      .form{
+        margin-left: 5px;
       }
 
       .last-card{
@@ -817,7 +979,7 @@ form .i8{
     }
       
     .float-content{
-        left: -130px;
+        left: -190px;
         width: 300px;
         top: 1450px;
         }
@@ -829,15 +991,40 @@ form .i8{
         .float-content .float-text{
             margin-left: -60px;
         }
-    
+        .pic-form{
+            display: none;
+        }
+        
+        .combine-form{
+            justify-content: center;
+        }
       
+}
+
+.form{
+    @media (min-width:768px) {
+        
+    }
 }
 
  /* Laptop Styles (769px — 1024px) */
  @media (min-width: 769px) and (max-width: 1024px) {
-.top-bar{
-    display: none;
-}
+    .top-bar{
+        height: 55px;
+       display: flex;
+       justify-content: space-around;
+    }
+    .top-bar .ps-0{
+        margin-left: -25px;
+        padding-top: 10px;
+        justify-content: space-around;
+    }
+    .top-bar .ps-0 li{
+        display: flex;
+       
+        justify-content: space-around;
+        padding-left: 18px;
+    }
 .navbar{
     margin-left: -110px
     
@@ -869,6 +1056,9 @@ form .i8{
 
 }
 
+.form{
+    margin-right: 50px;
+}
 .farm{
     width: 600px;
     height: 500px;
@@ -906,6 +1096,14 @@ form .i8{
         margin-left: -60px;
     }
 
+    .pic-form{
+        display: none;
+    }
+.combine-form .form{
+    
+    margin-left: 80px;
+}
+
 }
 
   
@@ -923,14 +1121,29 @@ form .i8{
         .float-content .float-text{
             margin-left: -60px;
         }
+
+        .pic-form{
+            display: none;
+        }
+        
+        .combine-form{
+            justify-content: center;
+        } 
+
+        .pic-form{
+            display: none;
+        }
     
 }
 
  
 
- @media  (min-width:1025px) and (max-width:1300px) {
+ @media  (min-width:1024px) and (max-width:1300px) {
     .navbar{
      margin-left: -200px;
+    }
+    .pic-form{
+        display: none;
     }
     .navbar .nav-icon{
         margin-right: 10px;
@@ -967,17 +1180,23 @@ form .i8{
     display: none;
   }
 
-  .float-content{
-
-}
 
 .farm{
     width: 600px;
     height: 500px;
 }
-.sixth-image-container  img{
-   
+
+.pic-form{
+    display: none;
 }
+
+.combine-form{
+    justify-content: center;
+}
+
+/* .sixth-image-container  img{
+   
+} */
 
 .card-03{
     left: 450px;
@@ -990,7 +1209,7 @@ form .i8{
     
 }
 .float-content{
-    left: -100px;
+    left: 10px;
     width: 700px;
     top: 1100px;
     }
@@ -1029,6 +1248,13 @@ form .i8{
     height: 500px;
 }
 
+.pic-form{
+    display: none;
+}
+
+.combine-form{
+    justify-content: center;
+}
 /* .sixth-image-container  img{
     display: none;
 } */
