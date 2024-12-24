@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
     font-family:  sans-serif;
@@ -6,10 +7,13 @@
     line-height: 1.7;
     letter-spacing: 0.5px;
     box-sizing: border-box;
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
     
 }
 
- 
+
 .top-bar{
     background: #000;
     color: azure;
@@ -222,7 +226,7 @@ margin-right: 110px;
     
 }
 
-.card-02{
+/* .card-02{
     display: flex;
     padding-bottom: 100px;
     justify-content: center;
@@ -238,17 +242,17 @@ margin-right: 110px;
 }
 /* .card-02 .card-1st{
   margin-left: 200px;
-} */
+} */ */
 
 .forth h2{
     padding-top: 90px;
 }
-
+/* 
 .card-02 svg{
     width: 80px;
     padding-top: 15px;
     padding-left: 5px;
-}
+} */
 
 .float-content{
     display: flex;
@@ -634,11 +638,11 @@ padding-left: 10px;
     height: 200px;
     margin-right: 30px;
 }
-.forth .card-02 .card-2{
+/* .forth .card-02 .card-2{
     width: 300px;
     height: 300px;
     margin-right: 30px;
-}
+} */
 
 .last .last-card{
    padding-right: 20px;
@@ -722,7 +726,7 @@ form{
 .float-content{
     left: -235px;
     width: 250px;
-    top: 1450px;
+    top: 1400px;
     }
 
     .float-content .float-img img{
@@ -751,6 +755,15 @@ form{
 .combine-form{
     justify-content: center;
 }
+
+.card-02{
+    width: 300px;
+    margin-left: -30px;
+    /* justify-content: center; */
+    
+}
+
+
   
  }
 
@@ -982,6 +995,7 @@ form{
         left: -190px;
         width: 300px;
         top: 1450px;
+    
         }
     
         .float-content .float-img img{
@@ -1052,9 +1066,7 @@ form{
     display: none;
   }
 
-  .float-content{
 
-}
 
 .form{
     margin-right: 50px;
@@ -1063,9 +1075,7 @@ form{
     width: 600px;
     height: 500px;
 }
-.sixth-image-container  img{
-    
-}
+
 .card-03{
     left: 400px;
     top: -40px;
@@ -1083,13 +1093,14 @@ form{
 }
 
 .float-content{
-    left: -150px;
-    width: 700px;
-    top: 1000px;
+    left: -200px;
+    width: 750px;
+    top: 1050px;
     }
 
     .float-content .float-img img{
-        width: 300px;
+        width: 400px;
+        height: 230px;
     }
 
     .float-content .float-text{
@@ -1209,13 +1220,13 @@ form{
     
 }
 .float-content{
-    left: 10px;
-    width: 700px;
-    top: 1100px;
+    left: -120px;
+    width: 750px;
+    top: 1050px;
     }
 
     .float-content .float-img img{
-        width: 300px;
+       height: 250px;
     }
 
     .float-content .float-text{
@@ -1239,9 +1250,6 @@ form{
     .third-section .content-3rd{
        padding-left: 100px;      
  }
-.float-content{
- 
-}
 
 .farm{
     width: 700px;
@@ -1297,17 +1305,170 @@ form{
 .float-content{
     left: -100px;
     width: 800px;
+    
     }
 
     .float-content .float-text{
         margin-left: -50px;
     }
+    .float-content .float-img img{
+       /* display: none; */
+       height: 250px;
+    }
 
  }
 
 
+ #scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #020202;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    display: none;
+    cursor: pointer;
+    border: #000 solid 1px;
+  }
+  
+  #scrollToTopBtn:hover {
+    background-color: #f6faf7;
+    color: #000;
+    font-size: 20px;
+  }
+  
+
+  ::selection {
+    color: rgb(8, 8, 8);
+    background: rgb(209, 209, 209);
+  }
+
+  .fl-con{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .card-02 {
+    display: flex;
+    padding-bottom: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-02 .card-2 {
+    background-color: #20303d;
+    width: 400px;
+    height: 280px;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; 
+}
+
+.card-front {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* background-color: #20303d; */
+    color: #fff;
+}
+
+.card-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #edf1f5;
+    color: #141414;
+    transform: rotateY(180deg);
+     border-radius: 20px;
+}
+
+.card {
+    perspective: 1000px;
+}
+
+.rotate-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-y {
+    perspective: 1000px;
+}
+
+
+.card-inner {
+    transition: transform 0.5s; 
+    transform-style: preserve-3d; 
+}
+
+.card-y:hover .card-inner {
+    transform: rotateX(180deg);
+}
+
+.card-inner img {
+    transform: rotateX(0deg); 
+    transition: transform 0.5s;
+}
+
+.card-y:hover .card-inner img {
+    transform: rotateX(180deg); 
+}
+
+.card-02 svg {
+    width: 80px;
+    padding-top: 15px;
+    padding-left: 5px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-back img{
+    height: 280px;
+    width: 400px;
+    border-radius: 20px;
+}
 
 
 
+@media (max-width:344px) {
 
- 
+    .float-content{
+        left: -240px;
+    }
+    
+}
+
+@media (max-width:1024px) and (min-width:1020px){
+    .float-content{
+        left: -180px;
+    }
+    
+}
+
+@media (min-width:1280px) and (max-width:1290px) {
+
+    .float-content{
+        left:-40px
+    }
+    
+}
