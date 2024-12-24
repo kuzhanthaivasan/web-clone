@@ -73,26 +73,31 @@
   </nav>
 
 
-  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100" src="slide26.jpg" alt="First slide" style="height:100%;">
+        <img src="slide25.jpg" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="slide25.jpg" alt="Second slide" style="height: 100%;">
+        <img src="slide26.jpg" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="slide27.jpg" alt="Third slide" style="height: 100%">
+        <img src="slide27.jpg" class="d-block w-100" alt="...">
       </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 
   <div class="cards d-flex" style="align-items: center; justify-content: center; margin-top: 50px;">
@@ -185,37 +190,81 @@
   <section class="picpos2">
 
 <div class="forth pb-18 pb-lg-23">
- <center> <h2 class="h1 mb-0 font-weight-400 text-white">Our company <span class="font-weight-700">solutions</span></h2></center>
+ <center> <h2 class="h1 font-weight-400 text-white" style="padding-top: 50px;">Our company <span class="font-weight-700">solutions</span></h2></center>
 <center>
- <div class="card-02">
-  <div class="card card-2 card-1st mb-3 ">
-    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#3cdf3a"><path d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"/></svg> 
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  <div class="fl-con">
+  <div class="card-02">
+    <div class="card card-2 mb-3 rotate-card card-x">
+      <div class="card-inner">
+        <!-- Front side of the card -->
+        <div class="card-front">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#3cdf3a"><path d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"/></svg> 
+   
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          
+          </div>
+        </div>
+  
+        <!-- Back side of the card -->
+        <div class="card-back">
+       
+        <img src="service-13.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <div class="card-02">
+    <div class="card card-2 mb-3 rotate-card card-y">
+      <div class="card-inner">
+        <!-- Front side of the card -->
+        <div class="card-front">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#3cdf3a"><path d="M517-518 361.23-673.77 404-715.54l113 113 227-226 41.77 41.77L517-518ZM268.08-216.92l290.3 82.15 238.77-74q-3.07-13.61-12.77-20.88-9.69-7.27-21.69-7.27H566.85q-26.23 0-44.54-2t-37.62-8.77l-90.3-29.85 17.76-58.77 81 28.16q18.16 6.15 41.93 8.38 23.77 2.23 67.61 2.85 0-14.85-6.69-25.62-6.69-10.77-17.62-14.54l-232.07-85.23q-1.16-.38-2.12-.57-.96-.2-2.11-.2h-74v206.16ZM68.08-100v-383.07h273.61q6.23 0 12.66 1.3 6.42 1.31 12.03 3.31l233.08 85.85q27.23 10.07 45.23 35.65 18 25.58 18 60.04h100q43.08 0 70.19 27.81Q860-241.31 860-196.92v32.3L560.38-71.54l-292.3-83.38V-100h-200Zm60-60h80v-263.08h-80V-160Z"/></svg>
+   
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+            
+          </div>
+        </div>
+  
+        <!-- Back side of the card -->
+        <div class="card-back">
+          
+         <img src="service-11.jpg" alt="">
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="card card-2 mb-3">
-    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#3cdf3a"><path d="M517-518 361.23-673.77 404-715.54l113 113 227-226 41.77 41.77L517-518ZM268.08-216.92l290.3 82.15 238.77-74q-3.07-13.61-12.77-20.88-9.69-7.27-21.69-7.27H566.85q-26.23 0-44.54-2t-37.62-8.77l-90.3-29.85 17.76-58.77 81 28.16q18.16 6.15 41.93 8.38 23.77 2.23 67.61 2.85 0-14.85-6.69-25.62-6.69-10.77-17.62-14.54l-232.07-85.23q-1.16-.38-2.12-.57-.96-.2-2.11-.2h-74v206.16ZM68.08-100v-383.07h273.61q6.23 0 12.66 1.3 6.42 1.31 12.03 3.31l233.08 85.85q27.23 10.07 45.23 35.65 18 25.58 18 60.04h100q43.08 0 70.19 27.81Q860-241.31 860-196.92v32.3L560.38-71.54l-292.3-83.38V-100h-200Zm60-60h80v-263.08h-80V-160Z"/></svg>
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  <div class="card-02">
+    <div class="card card-2 mb-3 rotate-card card-x">
+      <div class="card-inner">
+        <!-- Front side of the card -->
+        <div class="card-front">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#3cdf3a"><path d="M287.69-535.39 480-850.77l192.31 315.38H287.69ZM700-95.39q-68.85 0-116.73-47.88-47.88-47.88-47.88-116.73t47.88-116.73q47.88-47.88 116.73-47.88t116.73 47.88q47.88 47.88 47.88 116.73t-47.88 116.73Q768.85-95.39 700-95.39Zm-564.61-20v-289.22h289.22v289.22H135.39Zm564.6-39.99q43.93 0 74.28-30.34t30.35-74.27q0-43.93-30.34-74.28t-74.27-30.35q-43.93 0-74.28 30.34t-30.35 74.27q0 43.93 30.34 74.28t74.27 30.35Zm-504.61-20h169.24v-169.24H195.38v169.24Zm198.16-420h172.92L480-734.46l-86.46 139.08Zm86.46 0ZM364.62-344.62ZM700-260Z"/></svg>
+   
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+ 
+          </div>
+        </div>
+  
+        <!-- Back side of the card -->
+        <div class="card-back">
+       
+          <img src="service-12.jpg" alt="">
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="card card-2 mb-3">
-    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#3cdf3a"><path d="M287.69-535.39 480-850.77l192.31 315.38H287.69ZM700-95.39q-68.85 0-116.73-47.88-47.88-47.88-47.88-116.73t47.88-116.73q47.88-47.88 116.73-47.88t116.73 47.88q47.88 47.88 47.88 116.73t-47.88 116.73Q768.85-95.39 700-95.39Zm-564.61-20v-289.22h289.22v289.22H135.39Zm564.6-39.99q43.93 0 74.28-30.34t30.35-74.27q0-43.93-30.34-74.28t-74.27-30.35q-43.93 0-74.28 30.34t-30.35 74.27q0 43.93 30.34 74.28t74.27 30.35Zm-504.61-20h169.24v-169.24H195.38v169.24Zm198.16-420h172.92L480-734.46l-86.46 139.08Zm86.46 0ZM364.62-344.62ZM700-260Z"/></svg>
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-
- </div>
+</div>
 </center>
 </div>
 <div class="float-content ">
@@ -237,105 +286,101 @@
   <img src="bg19.jpg" alt="">
  </div>
   <center>
-  <div class="form">
-    <div class="farm">
-    <div class=" form1 shadow bg-white p-2-3 p-md-7 border-radius-10">
-      <h3 class="mb-1-9 font-weight-400 " style="padding-top:40px; padding-left: 40px;padding-bottom: 10px;">Read to get <span class="font-weight-700">Started?</span></h3>
-      <form class="quform" action="#" method="post"  onclick="">
-
-          <div class="quform-elements">
-
-              <div class="qu1 row">
-
-                  <!-- Begin Text input element -->
-                  <div class="col-md-6">
-                      <div class="quform-element form-group">
-                          <div class="quform-input" style="padding-left: 40px;padding-bottom: 30px;">
-                              <input class="form-control i1" id="name" type="text" name="name" placeholder="Your name here">
-                          </div>
-                      </div>
-
-                  </div>
-                  <!-- End Text input element -->
-
-                  <!-- Begin Text input element -->
-                  <div class="col-md-6">
-                      <div class="quform-element form-group">
-                          <div class="quform-input"style="padding-right: 40px;padding-bottom: 30px;" >
-                              <input class="form-control i2" id="email" type="text" name="email" placeholder="Your email here">
-                          </div>
-                      </div>
-                  </div>
-                  <!-- End Text input element -->
-
-                  <!-- Begin Text input element -->
-                  <div class="col-md-6">
-                      <div class="quform-element form-group quform-select-replaced">
-                          <div class="quform-input" style="padding-left: 40px;padding-bottom: 30px;">
-                              <input class="form-control i3" id="subject" type="text" name="subject" placeholder="Your subject here">
-                          </div>
-                      </div>
-
-                  </div>
-                  <!-- End Text input element -->
-
-                  <!-- Begin Text input element -->
-                  <div class="col-md-6">
-                      <div class="quform-element form-group">
-                          <div class="quform-input" style="padding-right: 40px;padding-bottom: 30px;" >
-                              <input class="form-control i4" id="phone" type="text" name="phone" placeholder="Your phone here">
-                          </div>
-                      </div>
-
-                  </div>
-                  <!-- End Text input element -->
-
-                  <!-- Begin Textarea element -->
-                  <div class="col-md-12">
-                      <div class="quform-element form-group">
-                          <div class="quform-input" style="padding-left: 40px;padding-bottom: 30px; padding-right: 40px;">
-                              <textarea class="i5 form-control h-100" id="message" name="message" rows="3" placeholder="Tell us a few words"></textarea>
-                          </div>
-                      </div>
-                  </div>
-                  <!-- End Textarea element -->
-
-                  <!-- Begin Captcha element -->
-                  <div class="col-md-12">
-                      <div class="quform-element">
-                          <div class="form-group">
-                              <div class="quform-input" style="padding-left: 40px;padding-bottom: 30px; padding-right: 40px;">
-                                  <input class="i6 form-control" id="type_the_word" type="text" name="type_the_word" placeholder="Type the below word">
-                              </div>
-                          </div>
-                          <div class="form-group">
-                              <div class="quform-captcha">
-                                  <div class="i7 quform-captcha-inner" style="padding-left: 40px;padding-bottom: 20px;">
-                                      <img src="google-invisible-recaptcha-for-magento-2_2x.png" alt="..." style="width: 200px; " >
+    <div class="form">
+      <div class="farm">
+          <div class="form1 shadow bg-white p-2-3 p-md-7 border-radius-10">
+              <h3 class="mb-1-9 font-weight-400" style="padding-top:40px; padding-left: 40px;padding-bottom: 10px;">Ready to get <span class="font-weight-700">Started?</span></h3>
+              <form class="quform" id="contactForm">
+  
+                  <div class="quform-elements">
+                      <div class="qu1 row">
+  
+                          <!-- Begin Name input -->
+                          <div class="col-md-6">
+                              <div class="quform-element form-group">
+                                  <div class="quform-input" style="padding-left: 40px;padding-bottom: 30px;">
+                                      <input class="form-control i1" id="name" type="text" name="name" placeholder="Your name here" required>
                                   </div>
                               </div>
                           </div>
+                          <!-- End Name input -->
+  
+                          <!-- Begin Email input -->
+                          <div class="col-md-6">
+                              <div class="quform-element form-group">
+                                  <div class="quform-input" style="padding-right: 40px;padding-bottom: 30px;">
+                                      <input class="form-control i2" id="email" type="email" name="email" placeholder="Your email here" required>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- End Email input -->
+  
+                          <!-- Begin Subject input -->
+                          <div class="col-md-6">
+                              <div class="quform-element form-group">
+                                  <div class="quform-input" style="padding-left: 40px;padding-bottom: 30px;">
+                                      <input class="form-control i3" id="subject" type="text" name="subject" placeholder="Your subject here" required>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- End Subject input -->
+  
+                          <!-- Begin Phone input -->
+                          <div class="col-md-6">
+                              <div class="quform-element form-group">
+                                  <div class="quform-input" style="padding-right: 40px;padding-bottom: 30px;">
+                                      <input class="form-control i4" id="phone" type="tel" name="phone" placeholder="Your phone here" pattern="[0-9]{10}" required>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- End Phone input -->
+  
+                          <!-- Begin Message textarea -->
+                          <div class="col-md-12">
+                              <div class="quform-element form-group">
+                                  <div class="quform-input" style="padding-left: 40px;padding-bottom: 30px; padding-right: 40px;">
+                                      <textarea class="i5 form-control h-100" id="message" name="message" rows="3" placeholder="Tell us a few words" ></textarea>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- End Message textarea -->
+  
+                          <!-- Begin Captcha -->
+                          <div class="col-md-12">
+                              <div class="quform-element">
+                                  <div class="form-group">
+                                      <div class="quform-input" style="padding-left: 40px;padding-bottom: 30px; padding-right: 40px;">
+                                          <input class="i6 form-control" id="type_the_word" type="text" name="type_the_word" placeholder="Type the below word" >
+                                      </div>
+                                  </div>
+                                  <div class="form-group">
+                                      <div class="quform-captcha">
+                                          <div class="i7 quform-captcha-inner" style="padding-left: 40px;padding-bottom: 20px;">
+                                              <img src="google-invisible-recaptcha-for-magento-2_2x.png" alt="..." style="width: 200px;">
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- End Captcha -->
+  
+                          <!-- Begin Submit button -->
+                          <div class="col-md-12">
+                              <div class="i8 quform-submit-inner" style="padding-left: 60px;padding-bottom: 60px;">
+                                  <button class="butn-style3" type="submit" style="width: 135px; height: 55px; border-radius: 5px; border-style: none; background: #6cf869;">Send Message</button>
+                              </div>
+                              <div class="quform-loading-wrap text-start"><span class="quform-loading"></span></div>
+                          </div>
+                          <!-- End Submit button -->
+  
                       </div>
                   </div>
-                  <!-- End Captcha element -->
-
-                  <!-- Begin Submit button -->
-                  <div class="col-md-12">
-                      <div class="i8 quform-submit-inner" style="padding-left: 60px;padding-bottom: 60px;">
-                          <button class="butn-style3" type="submit" style="width: 130px; height: 50px; border-radius: 5px; border-style: none; background: #6cf869; " >Send Message</button>
-                      </div>
-                      <div class="quform-loading-wrap text-start"><span class="quform-loading"></span></div>
-                  </div>
-                  <!-- End Submit button -->
-
-              </div>
-
+  
+              </form>
           </div>
-
-      </form>
+      </div>
   </div>
-</div>
-</div>
+  
  
 </div>
 </center>
@@ -353,7 +398,7 @@
                 <div class=" profile bg-white p-1-6 border-radius-10 text-center team-04 transition-hover" style="padding-bottom: 20px;">
                     <img src="team-19.jpg" class="rounded-circle" alt="..." style="margin-top: 30px;">
                     <div class="pt-4">
-                        <h3 class="h6 mb-0" style="padding: 20px;"><a href="#!">Amy Jenkins</a></h3>
+                        <h3 class="h6 mb-0" style="padding: 20px;"><a href="#!" style="text-decoration: none; color:#14212b;">Amy Jenkins</a></h3>
                         <div class="small mb-4" style="padding-bottom: 20px;">Financial Analyst</div>
                         <ul class="social-list2 mb-0 list-unstyled d-flex" style="justify-content: space-around;padding-right: 50px;" >
                             <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
@@ -368,7 +413,7 @@
                 <div class="bg-white p-1-6 border-radius-10 text-center team-04 transition-hover" style="padding-bottom: 20px;">
                     <img src="team-20.jpg" class="rounded-circle" alt="..." style="margin-top: 30px;">
                     <div class="pt-4">
-                        <h3 class="h6 mb-0" style="padding: 20px;"><a href="#!">Jeffrey Mueller</a></h3>
+                        <h3 class="h6 mb-0" style="padding: 20px;"><a href="#!" style="text-decoration: none; color:#14212b;">Jeffrey Mueller</a></h3>
                         <div class="small mb-4" style="padding-bottom: 20px;">Research Analyst</div>
                         <ul class="social-list2 mb-0 list-unstyled d-flex" style="justify-content: space-around;padding-right: 50px;">
                             <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
@@ -383,7 +428,7 @@
                 <div class="bg-white p-1-6 border-radius-10 text-center team-04 transition-hover" style="padding-bottom: 20px;">
                     <img src="team-21.jpg" class="rounded-circle" alt="..." style="margin-top: 30px;">
                     <div class="pt-4">
-                        <h3 class="h6 mb-0" style="padding: 20px;"><a href="#!">Anne Arias</a></h3>
+                        <h3 class="h6 mb-0" style="padding: 20px;"><a href="#!"style="text-decoration: none; color:#14212b;">Anne Arias</a></h3>
                         <div class="small mb-4" style="padding-bottom: 20px;">Statistical Analyst</div>
                         <ul class="social-list2 mb-0 list-unstyled d-flex" style="justify-content: space-around;padding-right: 50px;">
                             <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
@@ -398,8 +443,8 @@
                 <div class="bg-white p-1-6 border-radius-10 text-center team-04 transition-hover" style="padding-bottom: 20px;">
                     <img src="team-22.jpg" class="rounded-circle" alt="..." style="margin-top: 30px;">
                     <div class="pt-4">
-                        <h3 class="h6 mb-0" style="padding: 20px;"><a href="#!">Gerald Ruggiero</a></h3>
-                        <div class="small mb-4" style="padding-bottom: 20px;">Commodity Analyst</div>
+                        <h3 class="h6 mb-0" style="padding: 20px; "><a href="#!" style="text-decoration: none; color:#14212b;">Gerald Ruggiero</a></h3>
+                        <div class="small mb-4" style="padding-bottom: 20px; text-decoration: none;">Commodity Analyst</div>
                         <ul class="social-list2 mb-0 list-unstyled d-flex" style="justify-content: space-around;padding-right: 50px;">
                             <li><a href="#!"><i class="fab fa-facebook-f "></i></a></li>
                             <li><a href="#!"><i class="fab fa-twitter"></i></a></li>
@@ -438,8 +483,8 @@
     <img src="blog-23.jpg" alt="" srcset="">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a <br>natural lead-in to additional content.background-color: black;
-        color: white;p>
+      <p class="card-text">This is a wider card with supporting text below as a <br>natural lead-in to additional content.This content is a little bit longer.</p>
+
 
     </div>
   </div>
@@ -553,7 +598,7 @@
 
           <div class="col-md-6 col-lg-3 mt-1-9 wow fadeIn">
             <h3 class="footer-style text-white mb-4">Newslatter</h3>
-            <form class="#" action="#" method="post" enctype="multipart/form-data" onclick="">
+            <form class="#" action="#" method="post" onclick="">
 
                 <div class="quform-elements">
 
@@ -595,6 +640,8 @@
           </div>
       </div>
   </div>
+  <button id="scrollToTopBtn" onclick="scrollToTop()">^</button>
+  <script src="script.js"></script>
 </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
