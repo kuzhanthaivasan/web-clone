@@ -22,8 +22,7 @@ function scrollToTop() {
 
 
 
-
-    document.getElementById("contactForm").addEventListener("submit", function(event) {
+document.getElementById("contactForm").addEventListener("submit", function(event) {
         var isValid = true;
         var formElements = this.elements;
 
@@ -71,9 +70,19 @@ function scrollToTop() {
             alert("Please type the word shown in the captcha.");
         }
 
-        // If validation fails, prevent form submission
-        if (!isValid) {
-            event.preventDefault();
+        // If validation passes, show success popup
+        if (isValid) {
+            event.preventDefault();  // Prevent form submission to allow popup
+            showPopup();
         }
     });
 
+    // Function to show the success popup
+    function showPopup() {
+        document.getElementById("successPopup").style.display = "flex";
+    }
+
+    // Function to close the success popup
+    function closePopup() {
+        document.getElementById("successPopup").style.display = "none";
+    }
