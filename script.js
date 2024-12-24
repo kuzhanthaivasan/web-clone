@@ -22,67 +22,68 @@ function scrollToTop() {
 
 
 
+
 document.getElementById("contactForm").addEventListener("submit", function(event) {
-        var isValid = true;
-        var formElements = this.elements;
+  var isValid = true;
+  var formElements = this.elements;
 
-        // Validate Name
-        var name = formElements["name"].value;
-        if (name.trim() === "") {
-            isValid = false;
-            alert("Please enter your name.");
-        }
+  // Validate Name
+  var name = formElements["name"].value;
+  if (name.trim() === "") {
+      isValid = false;
+      alert("Please enter your name.");
+  }
 
-        // Validate Email
-        var email = formElements["email"].value;
-        var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-        if (!emailPattern.test(email)) {
-            isValid = false;
-            alert("Please enter a valid email.");
-        }
+  // Validate Email
+  var email = formElements["email"].value;
+  var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  if (!emailPattern.test(email)) {
+      isValid = false;
+      alert("Please enter a valid email.");
+  }
 
-        // Validate Subject
-        var subject = formElements["subject"].value;
-        if (subject.trim() === "") {
-            isValid = false;
-            alert("Please enter a subject.");
-        }
+  // Validate Subject
+  var subject = formElements["subject"].value;
+  if (subject.trim() === "") {
+      isValid = false;
+      alert("Please enter a subject.");
+  }
 
-        // Validate Phone
-        var phone = formElements["phone"].value;
-        var phonePattern = /^[0-9]{10}$/;
-        if (!phonePattern.test(phone)) {
-            isValid = false;
-            alert("Please enter a valid 10-digit phone number.");
-        }
+  // Validate Phone
+  var phone = formElements["phone"].value;
+  var phonePattern = /^[0-9]{10}$/;
+  if (!phonePattern.test(phone)) {
+      isValid = false;
+      alert("Please enter a valid 10-digit phone number.");
+  }
 
-        // Validate Message
-        var message = formElements["message"].value;
-        if (message.trim() === "") {
-            isValid = false;
-            alert("Please enter a message.");
-        }
+  // Validate Message
+  var message = formElements["message"].value;
+  if (message.trim() === "") {
+      isValid = false;
+      alert("Please enter a message.");
+  }
 
-        // Validate Captcha
-        var captcha = formElements["type_the_word"].value;
-        if (captcha.trim() === "") {
-            isValid = false;
-            alert("Please type the word shown in the captcha.");
-        }
+  // Validate Captcha
+  var captcha = formElements["type_the_word"].value;
+  if (captcha.trim() === "") {
+      isValid = false;
+      alert("Please type the word shown in the captcha.");
+  }
 
-        // If validation passes, show success popup
-        if (isValid) {
-            event.preventDefault();  // Prevent form submission to allow popup
-            showPopup();
-        }
-    });
+  // If validation passes, show success popup
+  if (isValid) {
+      event.preventDefault();  // Prevent form submission to allow popup
+      showPopup();
+  }
+});
 
-    // Function to show the success popup
-    function showPopup() {
-        document.getElementById("successPopup").style.display = "flex";
-    }
+// Function to show the success popup
+function showPopup() {
+  document.getElementById("successPopup").style.display = "flex";
+}
 
-    // Function to close the success popup
-    function closePopup() {
-        document.getElementById("successPopup").style.display = "none";
-    }
+// Function to close the success popup
+function closePopup() {
+  document.getElementById("successPopup").style.display = "none";
+}
